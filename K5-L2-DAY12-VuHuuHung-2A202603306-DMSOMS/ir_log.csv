@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S03_ir,IR_sim,"ảnh đơn sắc mô phỏng mất thông tin màu sắc và giảm tương phản ở vùng tối bên trong lòng ghế trẻ em (rear_left)",child_seat.occupied,"giữ unknown vì không nhìn rõ bên trong ghế trẻ em, không đoán no/yes"
+S04_ir,IR_sim,"ảnh đơn sắc mô phỏng mất màu sắc của đồ vật đặt trên ghế rear_right, chỉ còn độ sáng và đường viền",object.type,"phải dựa vào hình dạng khối và vị trí ngữ cảnh để gán box thay vì dựa vào màu"
+S05_ir,IR_sim,"mất chi tiết sắc độ trong lòng hai ghế trẻ em (rear_left và rear_right) khiến vùng đệm tối khó phân biệt có vật nhỏ bên trong hay không",child_seat.occupied,"giữ unknown cho cả hai box child_seat thay vì đoán"
+D01,real_IR,"đốm phản xạ đèn LED NIR trên tròng kính cận che khuất vùng mắt trái và mắt phải của tài xế",eye_left / eye_right,"ghi unknown cho cả hai mắt (không đoán open/closed) và bật cờ occluded cho các điểm mắt trong face13"
+D02,real_IR,"phản xạ NIR trên tròng kính làm mất chi tiết mí mắt và đường viền mắt của tài xế",face13 / eye_left / eye_right,"giữ eye_left và eye_right là unknown; bật cờ occluded cho các điểm vùng mắt trong face13 thay vì đặt điểm đoán"
+D05,real_IR,"ảnh NIR đơn sắc mất màu sắc vật cầm tay và ánh sáng yếu dần ở phần rìa mặt khi tài xế nghiêng đầu",phone / eye_left,"chỉ vẽ phone (state=held) dựa trên hình dạng cạnh/góc rõ ràng; mắt trái khuất tối ghi unknown và bật outside cho 4 điểm mắt trái"
